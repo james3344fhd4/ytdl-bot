@@ -5,7 +5,7 @@
 # 5/3/21 18:31
 #
 
-__author__ = "Benny <benny.think@gmail.com>"
+__author__ = "Benny <cyph3rnoah>"
 
 import asyncio
 import datetime
@@ -244,7 +244,7 @@ async def send_help(event):
     async with bot.action(event.chat_id, 'typing'):
         await bot.send_message(event.chat_id, "Bot is not working? "
                                               "Wait a few seconds, send your link again or report bugs at "
-                                              "https://github.com/tgbot-collection/ytdl-bot/issues")
+                                              "@cyph3rnoah")
         raise events.StopPropagation
 
 
@@ -259,8 +259,8 @@ async def send_ping(event):
 @bot.on(events.NewMessage(pattern='/about'))
 async def send_about(event):
     async with bot.action(event.chat_id, 'typing'):
-        await bot.send_message(event.chat_id, "YouTube-DL by @BennyThink\n"
-                                              "GitHub: https://github.com/tgbot-collection/ytdl-bot")
+        await bot.send_message(event.chat_id, "YouTube-DL by @cyph3rnoah\n"
+                                              "join: @spacecloud")
         raise events.StopPropagation
 
 
